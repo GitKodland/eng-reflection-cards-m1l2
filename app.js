@@ -101,7 +101,7 @@ function generateLocalFeedback(tried, stuck, solution) {
         feedback += "🚀 A good solution! You think like a true developer!\n";
     }
 
-    feedback += "\n✨ Continue! You're on the right path!";
+    feedback += "\n✨ Keep going! You're on the right track!";
 
     return feedback;
 }
