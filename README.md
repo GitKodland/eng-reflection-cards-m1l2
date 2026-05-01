@@ -1,61 +1,51 @@
 # 🎮 Reflection Cards — Build • Reflect • Improve
 
-Интерактивное веб-приложение для саморефлексии учеников через модель:
+An interactive web app for pupils to practise self-reflection using the model:
 
-👉 **Попробовал → Застрял → Решение**
+👉 **Attempted → Stuck → Solution**
 
-Помогает детям (10–12 лет) учиться мыслить как разработчики:
+The web app seeks to help children (aged 10–12) learn to think like developers. They learn to:
 
-* формулировать цель
-* находить ошибки
-* предлагать решения
-
----
-
-## ✨ Основные возможности
-
-* 🧠 3 карточки рефлексии (Tried / Stuck / Solution)
-* 📸 Экспорт в **HD-картинку** (PNG)
-* 🤖 AI-фидбек (через backend или fallback)
-* 🎨 Игровой UI (неоновый стиль)
-* ⚡ Работает прямо в браузере (GitHub Pages)
+* set a goal
+* find errors
+* suggest solutions
 
 ---
 
-## 🧩 Как это работает
+## ✨ Key Features
 
-1. Ученик описывает, что он хотел сделать
-2. Анализирует, что пошло не так
-3. Формулирует решение
+* 🧠 3 reflection cards (Attempted / Stuck / Solution)
+* 📸 Export as an **HD image** (PNG)
+* 🤖 AI feedback (via backend or local fallback)
+* 🎨 Game-like UI (neon style)
+* ⚡ Works straight in the browser (via GitHub Pages)
 
-👉 Это реализация **Learning Loop**:
+---
+
+## 🧩 How It Works
+
+1. The student describes what they wanted to do
+2. They analyse what went wrong
+3. They formulate a solution
+
+👉 This is a **Learning Loop**:
 
 > Goal → Try → Stumble → Improve → Reflect
 
 ---
 
-## 🚀 Демо
-
-После деплоя доступно по ссылке:
-
-```
-https://andreipabiarzhyn.github.io/reflection-cards-m1l2/
-```
-
----
-
-## ⚙️ Установка и запуск
+## ⚙️ Installation & Running
 
 ```bash
 git clone https://github.com/AndreiPabiarzhyn/reflection-cards-m1l2.git
 cd reflection-cards-m1l2
 ```
 
-Открыть `index.html` в браузере
+Open `index.html` in your browser
 
 ---
 
-## 🌍 Деплой (GitHub Pages)
+## 🌍 Deployment (GitHub Pages)
 
 1. Settings → Pages
 2. Branch: `main`
@@ -64,29 +54,29 @@ cd reflection-cards-m1l2
 
 ---
 
-## 🤖 AI-фидбек
+## 🤖 AI Feedback
 
-Есть 2 режима:
+There are 2 modes available:
 
-### 1. Fallback (работает всегда)
+### 1. Fallback (always works)
 
-Локальная логика внутри `app.js`
+Local logic inside the `app.js` file
 
-### 2. Полный AI (рекомендуется)
+### 2. Full AI (recommended)
 
-Нужен backend (например Vercel)
+Requires a backend (like Vercel)
 
-Файл:
+File:
 
 ```
 /api/ai.js
 ```
 
-⚠️ Важно: API ключ нельзя хранить на фронте
+⚠️ Please note: the API key must never be stored on the front end
 
 ---
 
-## 📁 Структура проекта
+## 📁 Project Structure
 
 ```
 /reflection-cards-m1l2
@@ -99,42 +89,42 @@ cd reflection-cards-m1l2
 
 ---
 
-## 🎯 Цель проекта
+## 🎯 Project Goal
 
-Создать инструмент, который развивает:
+To create a tool that develops:
 
-* критическое мышление
-* самостоятельность
-* навык анализа ошибок
-* умение улучшать результат
+* critical thinking
+* independence
+* the ability to analyse mistakes
+* the ability to improve outcomes
 
-👉 Не просто "сделал задание", а:
-**понял, что сделал и как сделать лучше**
-
----
-
-## 🔮 Дальнейшее развитие
-
-* 🎮 XP и уровни
-* 🏆 Achievement карточки
-* 📊 История прогресса ученика
-* 🤖 Более умный AI-фидбек
-* 🧠 Персонализация под уровень ученика
+👉 The student hasn't just “completed the task”; instead, they:
+**understood what they did and how to do it better**
 
 ---
 
-## 👨‍💻 Автор
+## 🔮 Future Development
+
+* 🎮 XP and levels
+* 🏆 Achievement cards
+* 📊 Student's progress history
+* 🤖 Smarter AI feedback
+* 🧠 Personalisation for the pupil’s level
+
+---
+
+## 👨‍💻 Author
 
 Andrei Pabiarzhyn
 EdTech / Product / Kodland
 
 ---
 
-## 💡 Идея
+## 💡 Idea
 
-Проект вдохновлён образовательной моделью:
+The project is inspired by the educational model:
 
 > **Independent Strategic Creator**
-> (ученик, который не просто делает, а понимает и улучшает)
+> (a student who doesn’t just do the work, but understands and improves it)
 
 ---
