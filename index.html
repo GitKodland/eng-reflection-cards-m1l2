@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Рефлексия</title>
+<title>Reflection</title>
 
 <link rel="stylesheet" href="style.css">
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -11,33 +11,33 @@
 
 <body>
 
-<h1 class="title">🎮 Рефлексия разработчика</h1>
+<h1 class="title">🎮 Developer's Reflection</h1>
 
 <div id="cards" class="container">
 
     <div class="card green">
         <div class="icon">✔</div>
-        <h2>Попробовал</h2>
-        <textarea id="tried" placeholder="Опиши, что ты хотел сделать"></textarea>
+        <h2>Here's what I've attempted</h2>
+        <textarea id="tried" placeholder="Describe what you would like to do"></textarea>
     </div>
 
     <div class="card red">
         <div class="icon">✖</div>
-        <h2>Застрял</h2>
-        <textarea id="stuck" placeholder="Что пошло не так?"></textarea>
+        <h2>Here's where I stuck</h2>
+        <textarea id="stuck" placeholder="Did something go wrong?"></textarea>
     </div>
 
     <div class="card blue">
         <div class="icon">⚙</div>
-        <h2>Решение</h2>
-        <textarea id="solution" placeholder="Как улучшить?"></textarea>
+        <h2>Solution</h2>
+        <textarea id="solution" placeholder="How can I improve the work?"></textarea>
     </div>
 
 </div>
 
 <div class="buttons">
-    <button onclick="downloadImage()">📸 Скачать</button>
-    <button onclick="generateFeedback()">🤖 AI фидбек</button>
+    <button onclick="downloadImage()">📸 Download</button>
+    <button onclick="generateFeedback()">🤖 AI feedback</button>
 </div>
 
 <div id="feedback" class="feedback"></div>
