@@ -11,7 +11,7 @@ body {
     background: url("bg.jpg") center/cover no-repeat fixed;
 }
 
-/* затемнение */
+/* shading */
 body::before {
     content: "";
     position: fixed;
@@ -32,7 +32,7 @@ body::before {
     margin-top: 40px;
 }
 
-/* карточка */
+/* card */
 .card {
     width: 300px;
     height: 420px;
@@ -48,7 +48,7 @@ body::before {
     position: relative;
 }
 
-/* НЕОН РАМКИ */
+/* BORDER NEON EFFECT */
 .green {
     border: 2px solid #00ff9c;
     box-shadow: 0 0 20px #00ff9c;
@@ -64,7 +64,7 @@ body::before {
     box-shadow: 0 0 20px #00c3ff;
 }
 
-/* иконка */
+/* ICON */
 .icon {
     position: absolute;
     top: -25px;
@@ -102,7 +102,7 @@ body::before {
     margin-top: 30px;
 }
 
-/* textarea — ФИКС */
+/* textarea — FIX */
 textarea {
     flex: 1;
     margin-top: 15px;
@@ -122,12 +122,12 @@ textarea {
     outline: none;
 }
 
-/* неон при фокусе */
+/* neon on focus */
 textarea:focus {
     box-shadow: 0 0 10px #00c3ff;
 }
 
-/* кнопки */
+/* buttons */
 .buttons {
     margin-top: 30px;
 }
@@ -151,7 +151,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* фидбек */
+/* feedback */
 .feedback {
     margin-top: 20px;
     font-size: 16px;
