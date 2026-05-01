@@ -1,15 +1,15 @@
 // ==========================
-// 📸 СКАЧАТЬ КАК HD КАРТИНКУ
+// 📸 DOWNLOAD AS HD IMAGE
 // ==========================
 function downloadImage() {
 
     const element = document.getElementById("cards");
 
-    // фикс обрезания
+    // cropping fix
     window.scrollTo(0, 0);
 
     html2canvas(element, {
-        scale: window.devicePixelRatio * 2, // 🔥 супер качество
+        scale: window.devicePixelRatio * 2, // 🔥 great quality
         useCORS: true,
         backgroundColor: null
     }).then(canvas => {
@@ -22,7 +22,7 @@ function downloadImage() {
     });
 }
 // ==========================
-// 🤖 AI ФИДБЕК
+// 🤖 AI FEEDBACK
 // ==========================
 async function generateFeedback() {
 
@@ -32,18 +32,18 @@ async function generateFeedback() {
 
     const feedbackEl = document.getElementById("feedback");
 
-    // UX: проверка
+    // UX: checking
     if (!tried || !stuck || !solution) {
-        feedbackEl.innerText = "⚠️ Заполни все карточки";
+        feedbackEl.innerText = "⚠️ Fill out all the cards";
         return;
     }
 
-    feedbackEl.innerText = "🤖 Думаю...";
+    feedbackEl.innerText = "🤖 Thinking...";
 
     try {
 
         // ==========================
-        // ВЫЗОВ BACKEND (ВАЖНО!)
+        // CALLING THE BACKEND (IMPORTANT!)
         // ==========================
         const res = await fetch("/ai", {
             method: "POST",
@@ -66,7 +66,7 @@ async function generateFeedback() {
     } catch (e) {
 
         // ==========================
-        // 🧠 FALLBACK (умный локальный)
+        // 🧠 FALLBACK (CLEVER LOCAL SOLUTION)
         // ==========================
         feedbackEl.innerText = generateLocalFeedback(tried, stuck, solution);
     }
@@ -74,34 +74,34 @@ async function generateFeedback() {
 
 
 // ==========================
-// 🧠 ЛОКАЛЬНЫЙ ФИДБЕК (если AI упал)
+// 🧠 LOCAL FEEDBACK (if AI is unavailable)
 // ==========================
 function generateLocalFeedback(tried, stuck, solution) {
 
-    let feedback = "💬 Фидбек:\n\n";
+    let feedback = "💬 Feedback:\n\n";
 
-    // 1. Попробовал
+    // 1. Attempted
     if (tried.length < 20) {
-        feedback += "👉 Попробуй описать идею подробнее.\n";
+        feedback += "👉 Try to describe your idea more clearly.\n";
     } else {
-        feedback += "✅ Круто! Ты четко описал, что хотел сделать.\n";
+        feedback += "✅ Great! You've done a great job explaining what you've attempted to do.\n";
     }
 
-    // 2. Проблема
-    if (stuck.length < 10 || stuck.includes("не знаю")) {
-        feedback += "👉 Попробуй точнее понять проблему.\n";
+    // 2. Problem
+    if (stuck.length < 10 || stuck.includes("don't know")) {
+        feedback += "👉 Try to analyse your problem.\n";
     } else {
-        feedback += "👍 Отлично, ты заметил, что пошло не так.\n";
+        feedback += "👍 Great! You have a clear understanding of the issue that has to be fixed!\n";
     }
 
-    // 3. Решение
+    // 3. Solution
     if (solution.length < 10) {
-        feedback += "👉 Добавь конкретные шаги, что будешь делать.\n";
+        feedback += "👉 What do you want to improve? Try adding clear, easy-to-follow steps.\n";
     } else {
-        feedback += "🚀 Хорошее решение! Ты думаешь как разработчик.\n";
+        feedback += "🚀 A good solution! You think like a true developer!\n";
     }
 
-    feedback += "\n✨ Продолжай, ты на правильном пути!";
+    feedback += "\n✨ Continue! You're on the right path!";
 
     return feedback;
 }
