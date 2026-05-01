@@ -14,21 +14,21 @@ export default async function handler(req, res) {
                 {
                     role: "system",
                     content: `
-Ты добрый наставник для детей 10-12 лет.
+You are a kind mentor for children aged 10-12.
 
-- Хвали за попытку
-- Мягко подсказывай
-- Без критики
-- Просто и понятно
-- 4-5 предложений
+- Praise for the attempts
+- Offer suggestions gently
+- Do not criticise
+- Respond in a simple and clear fashion
+- Limit assessment to 4-5 sentences
 `
                 },
                 {
                     role: "user",
                     content: `
-Попробовал: ${tried}
-Проблема: ${stuck}
-Решение: ${solution}
+Attempted: ${tried}
+The problem: ${stuck}
+The solution: ${solution}
 `
                 }
             ]
